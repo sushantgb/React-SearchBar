@@ -28,6 +28,7 @@
   border-style: none;
   font-weight: 600;
   text-transform: uppercase;
+  font-size: 1.5em;
 }
 .search-div{
   display: flex;
@@ -203,6 +204,9 @@
   }
   .description-box div:nth-child(2) div{
     font-size: 0.7em;
+  }
+  .header-container button{
+    font-size: 1em;
   }
 }
 
