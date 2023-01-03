@@ -19,9 +19,15 @@
   width: 100%;
   margin-bottom: 1em;
 }
-.header-container h4{
+.header-container button{
   text-shadow: 0 0 3px rgb(204, 204, 204);
   cursor: pointer;
+  letter-spacing: 0.2em;
+  padding: 0.5em;
+  background: none;
+  border-style: none;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .search-div{
   display: flex;
