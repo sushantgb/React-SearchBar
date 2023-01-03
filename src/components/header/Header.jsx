@@ -8,10 +8,8 @@ const Header = () => {
     <>
       <div className="header-container">
         <div>
+          {/* changing context by clicking home button */}
           <button onClick={()=> setContextVal("All")}>Gallery</button>
-          {/* <NavLink className="home-btn" to="/refresh">
-            <h4>Gallery</h4>
-          </NavLink> */}
         </div>
         <div>
           <Search />
