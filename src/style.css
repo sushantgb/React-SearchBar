@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Asap;
+}
+
+/* header styling */
+.header-container{
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  box-shadow: 0 0 8px rgb(184, 182, 182);
+  padding: 0.5em 1em;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.header-container h4{
+  text-shadow: 0 0 3px rgb(204, 204, 204);
+  cursor: pointer;
+}
+.search-div{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.search-div input{
+  width: 50%;
+  padding: 1em;
+  border-style: none;
+  box-shadow: 0 0 2px grey;
+  border-radius: 0.2em;
+  font-family: Asap;
+}
+.search-div input:focus{
+  outline: solid thin pink;
+}
+/* ------------------- */
+
+/* post (cards display) related styles */
+.post-container{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  gap: 1em;
+  padding: 0.5em;
+}
+.post-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5em;
+  border-radius: 0.2em;
+  padding: 1em;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 0 0 8px rgb(211, 210, 210);
+}
+.post-card:hover{
+  transform: scale(0.95);
+}
+
+.post-card div:first-child span{
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.post-card div:nth-child(2) img{
+  width: 100%;
+  height: 25em;
+}
+.post-card div:nth-child(3) span{
+  font-size: 0.5em;
+  color: grey;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+/* ---------------------- */
+/* class to hide description box */
+.hidden{
+  display: none;
+}
+/* for description box when card is clicked */
+.description-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  background-color: rgb(173, 166, 166, 0.8);
+  z-index: 1000;
+  font-size: 1em;
+  padding: 1em;
+}
+.description-box div:first-child{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.description-box div:first-child span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: white;
+  padding: 1em;
+  width: 1em;
+  height: 1em;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.description-box span:first-child:hover{
+  opacity: 0.7;
+}
+.description-box div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  background-color: white;
+  letter-spacing: 0.06em;
+  font-size: 1em;
+}
+.description-box div:nth-child(2) div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(214, 16, 49);
+  width: 100%;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 0;
+}
+.description-box div:nth-child(2) span{
+  font-size: 1em;
+}
+.description-box div:nth-child(2) a{
+  text-decoration: none;
+  color: rgb(214, 16, 49);
+  border: solid thin rgb(214, 16, 49);
+  padding: 0.2em 1em;
+  transition: all 0.5s;
+  text-align: center;
+}
+.description-box div:nth-child(2) a:hover{
+  background-color:rgb(214, 16, 49);
+  color: white;
+}
+
+/* no search found div */
+.search-empty{
+  display: flex;
+  position: fixed;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  background-color:whitesmoke;
+  box-shadow: 0 2px 4px grey;
+  border-radius:0.2em;
+  width: 95%;
+}
+.search-empty-inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(240, 14, 89);
+}
+.search-empty span{
+  font-size: 5em;
+}
+.search-empty span:nth-child(2){
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* for mobile screen */
+@media screen and (max-width:900px){
+  .post-container{
+    grid-template-columns: 1fr;
+  }
+  .search-div input{
+    width: 100%;
+  }
+  .description-box div:nth-child(2) div{
+    font-size: 0.7em;
+  }
+}
+
