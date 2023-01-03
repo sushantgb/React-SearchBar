@@ -1,3 +1,4 @@
 # React-SearchBar
+A static ReactJS app which displays image cards and provide the search ability by using creatContext API, useContext and custom Global Context hook.
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-tyciet)
+[![Link - View App Here](https://img.shields.io/static/v1?label=Link&message=View+App+Here&color=ff0053&style=for-the-badge)](https://react-searchbar-usecontext.netlify.app/)
