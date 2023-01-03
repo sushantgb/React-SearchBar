@@ -208,6 +208,9 @@
   .description-box div:nth-child(2) div{
     font-size: 0.7em;
   }
+  .description-box div:nth-child(2){
+    font-size: 0.8em;
+  }
   .header-container button{
     font-size: 1em;
   }
