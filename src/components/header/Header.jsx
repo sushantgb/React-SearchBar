@@ -6,6 +6,7 @@ const Header = () => {
   const [contextVal, setContextVal] = useGlobalContext();
   return (
     <>
+      {/* Home button of header */}
       <div className="header-container">
         <div>
           {/* changing context by clicking home button */}
