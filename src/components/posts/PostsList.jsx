@@ -19,6 +19,7 @@ const PostList = () => {
     /* default value */
     if (contextValue[0] === 'All') {
       setCardState(Data);
+      setClassState('hidden');
     } else {
       /* updater */
       const updater = Data.filter((element) => {

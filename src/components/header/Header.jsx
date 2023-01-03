@@ -4,12 +4,16 @@ import Search from './Search';
 import { useGlobalContext } from '../../context/Context';
 const Header = () => {
   const [contextVal, setContextVal] = useGlobalContext();
+
+  const SetHome = () =>{
+    setContextVal("All");
+  }
   return (
     <>
       <div className="header-container">
         <div>
           {/* changing context by clicking home button */}
-          <button onClick={()=> setContextVal("All")}>Gallery</button>
+          <button onClick={()=> SetHome()}>Gallery</button>
         </div>
         <div>
           <Search />
