@@ -107,6 +107,7 @@
   z-index: 1000;
   font-size: 1em;
   padding: 1em;
+  text-align: justify;
 }
 .description-box div:first-child{
   display: flex;
